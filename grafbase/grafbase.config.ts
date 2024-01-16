@@ -65,7 +65,7 @@ const jwt = auth.JWT({
 })
 
 export default config({
-  schema: g,
+  graph: g,
   auth:{
     providers:[jwt],
     rules : (rules)=> rules.private()
